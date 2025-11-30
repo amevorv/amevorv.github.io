@@ -6,6 +6,9 @@ import calleva from '@/assets/projects/calleva.png';
 import electconnect from '@/assets/projects/electconnect.png';
 import foodzup from '@/assets/projects/foodzup.png';
 import oxafrica from '@/assets/projects/ox.jpg';
+import chopmoney from '@/assets/projects/chopmoney.png';
+import gsemonitor from '@/assets/projects/gsemonitor.png';
+import ai from '@/assets/projects/ai.png';
 import lta from '@/assets/projects/manager.png';
 
 const projectCategories = ['All', 'AI', 'Full Stack', 'Cloud & DevOps', 'Mobile', 'UI/UX'];
@@ -13,63 +16,63 @@ const projectCategories = ['All', 'AI', 'Full Stack', 'Cloud & DevOps', 'Mobile'
 const projects = [
   {
     id: 1,
-    title: 'AI-Powered Content Generator',
-    description: 'A machine learning application that generates related content based on user inputs and domain knowledge.',
-    image: smartAIassistant,
+    title: 'Artificial Intelligence',
+    description: 'Leveraging AI technologies to create intelligent solutions that enhance task automations.',
+    image: ai,
     categories: ['AI', 'Full Stack'],
     techStack: ['OpenAI API', 'Figma', 'React', 'Node.js'],
-    liveDemo: 'https://amevorv.github.io',
-    githubRepo: 'https://github.com/PurpleWave/smart-assistance',
+    private: true,
+    liveDemo: 'https://purplewave.com'
   },
   {
     id: 2,
-    title: 'Real-time Analytics Dashboard',
-    description: 'An interactive dashboard that provides real-time insights and visualization of complex data sets.',
-    image: electconnect,
+    title: 'Real-time Analytics',
+    description: 'Data processing and consolidation to deliver dynamic analytics and insights through interactive dashboards.',
+    image: gsemonitor,
     categories: ['Full Stack', 'Mobile', 'UI/UX'],
     techStack: ['React', 'Node.js', 'WebSockets', '.Net', 'Azure', 'Flutter', 'MySQL'],
-    liveDemo: 'https://amevorv.github.io',
-    githubRepo: 'https://github.com/Tech231Liberia/analytics-dashboard',
+    private: false,
+    liveDemo: 'https://gsemonitor.chopmoney.co'
   },
   {
     id: 3,
     title: 'Cross-Platform Mobile Apps',
-    description: 'A feature-rich mobile applications that runs seamlessly on iOS and Android with a shared codebase.',
+    description: 'Feature-rich mobile applications that runs seamlessly on iOS and Android with a shared codebase.',
     image: foodzup,
     categories: ['Mobile', 'UI/UX', 'Cloud & DevOps'],
     techStack: ['Flutter', 'Firebase', 'Figma', 'GCP', 'Linux'],
-    liveDemo: 'https://amevorv.github.io',
-    githubRepo: 'https://github.com/Chop-money.co/mobile-app',
+    private: true,
+    liveDemo: 'https://tech231liberialtd.com'
   },
   {
     id: 4,
-    title: 'Enterprise E-commerce Platform',
-    description: 'A scalable e-commerce solution with advanced features like real-time inventory management and POS processing.',
-    image: calleva,
+    title: 'Fintech Solutions',
+    description: 'Secure and scalable financial applications designed to streamline transactions and enhance user experience.',
+    image: chopmoney,
     categories: ['Full Stack', 'UI/UX', 'Cloud & DevOps'],
     techStack: ['MongoDB', 'React', 'Node', 'MicroServices', 'Express'],
-    liveDemo: 'https://amevorv.github.io/calleva',
-    githubRepo: 'https://github.com/Tuls-org/calleva',
+    private: false,
+    liveDemo: 'https://app.chopmoney.co'
   },
   {
     id: 5,
-    title: 'Process Management Platform',
-    description: 'A comprehensive dashboard for managing and visualizing complex processes in real-time.',
-    image: lta,
+    title: 'Enterprise Management Systems',
+    description: 'Comprehensive solutions to optimize business operations, resource planning, and workflow management.',
+    image: oxafrica,
     categories: ['Full Stack', 'UI/UX', 'Cloud & DevOps'],
     techStack: ['React', 'Springboot', 'Java', 'Postgres', 'Docker'],
-    liveDemo: 'https://amevorv.github.io',
-    githubRepo: 'https://github.com/amevorv/allthrine_pages',
+    private: true,
+    liveDemo: 'https://purplewave.com'
   },
   {
     id: 6,
-    title: 'Agricultural Management Platform',
-    description: 'A web-based platform for managing agricultural processes, including equipment management and resource allocation.',
-    image: oxafrica,
+    title: 'Government Digital Transformation',
+    description: 'Enhance service delivery and citizen engagement through digital transformation.',
+    image: electconnect,
     categories: ['Full Stack', 'Cloud & DevOps', 'UI/UX'],
     techStack: ['Github Actions', 'React', 'Lunacy'],
-    liveDemo: 'https://amevorv.github.io/oxafrica',
-    githubRepo: 'https://github.com/amevorv/oxafrica',
+    private: true,
+    liveDemo: 'https://tech231liberialtd.com'
   },
 ];
 

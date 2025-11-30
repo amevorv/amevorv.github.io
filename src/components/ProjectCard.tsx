@@ -14,6 +14,7 @@ interface Project {
   techStack: string[];
   liveDemo: string;
   githubRepo: string;
+  private: boolean;
 }
 
 interface ProjectCardProps {
@@ -50,19 +51,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           ))}
         </div>
       </CardContent>
-      <CardFooter className="flex justify-between">
-        <Button variant="outline" size="sm" className="gap-2" asChild>
-          <a href={project.githubRepo} target="_blank" rel="noopener noreferrer">
-            <Github className="h-4 w-4" />
-            <span>Code</span>
-          </a>
-        </Button>
-        <Button size="sm" className="gap-2" asChild>
-          <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
-            <span>Live Demo</span>
-            <ExternalLink className="h-4 w-4" />
-          </a>
-        </Button>
+      <CardFooter className="flex justify-end">
+          <Button size="sm" className={ project.private ? "opacity-50 cursor-not-allowed gap-2" : "gap-2"} asChild>
+            <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
+              <span>{project.private ? "Private" : "Sample"}</span>
+              {!project.private && <ExternalLink className="h-4 w-4" />}
+            </a>
+          </Button>
       </CardFooter>
     </Card>
   );
